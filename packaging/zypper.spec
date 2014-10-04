@@ -9,24 +9,24 @@ Name:       zypper
 # << macros
 
 Summary:    Command line software manager using libzypp
-Version:    1.8.3
+Version:    1.9.17
 Release:    1
 Group:      System/Packages
 License:    GPL v2 or later
 URL:        http://en.opensuse.org/Zypper
-Source0:    %{name}-%{version}.tar.bz2
+Source0:    %{name}-%{version}.tar.xz
 Source1:    %{name}-rpmlintrc
 Source100:  zypper.yaml
 Patch0:     zypper-libxml2.patch
 Requires:   procps
-BuildRequires:  pkgconfig(libzypp) >= 12.2.0
-BuildRequires:  pkgconfig(augeas)
+BuildRequires:  pkgconfig(libzypp) >= 13.10.0
+BuildRequires:  pkgconfig(augeas) >= 0.5.0
 BuildRequires:  boost-devel >= 1.33.1
 BuildRequires:  gettext-devel >= 0.15
 BuildRequires:  readline-devel >= 5.1
 BuildRequires:  cmake >= 2.4.6
-BuildRequires:  gcc-c++ >= 4.1
-BuildRequires:  cmake
+BuildRequires:  gcc-c++ >= 4.5
+BuildRequires:  cmake >= 2.4.6
 
 %description
 Zypper is a command line tool for managing software. It can be used to add

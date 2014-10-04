@@ -1,6 +1,6 @@
 Name: zypper
 Summary: Command line software manager using libzypp
-Version: 1.8.3
+Version: 1.9.17
 Release: 1
 Group: System/Packages
 License: GPL v2 or later
@@ -21,7 +21,7 @@ Description: |
 Requires:
     - procps
 PkgConfigBR:
-    - libzypp >= 12.2.0
+    - libzypp >= 13.10.0
     - augeas
 PkgBR:
     - boost-devel >= 1.33.1
